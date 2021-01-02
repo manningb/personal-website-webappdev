@@ -1,0 +1,450 @@
+/* resources that I used:
+Favicon: https://favicon.io/favicon-generator/
+Image Gallery: https://www.w3schools.com/css/css_image_gallery.asp
+Navbar menu button: https://css-tricks.com/the-checkbox-hack/
+Styling for navbar, responsive - followed w3 schools: https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_responsive
+Generating background color gradients: https://cssgradient.io/
+Contact Section: https://www.w3schools.com/howto/howto_css_contact_section.asp
+
+Sources for images from the web:
+Kilkenny Backgound: https://www.discoverireland.ie/kilkenny
+CBS Crest: https://twitter.com/cbskilkenny1859
+CBS Bg: https://www.schooldays.ie/school/me%C3%A1nscoil-na-mbr%C3%A1ithre-criosta%C3%AD-rollnumber-61550G
+UCD Logo: https://ucdrecruitmentfairs.graduateland.com/events
+UCD Bg: https://c3.thejournal.ie/media/2019/02/shutterstock_1056462500-390x285.jpg
+New Ireland Bg: https://www.irishtimes.com/business/commercial-property/boi-to-put-new-ireland-dublin-hq-up-for-sale-in-coming-weeks-1.3367534
+Liberty Bg: http://www.wejchert.ie/projects/project-detail/liberty-insurance-ireland-building-blanchardstown-dublin
+Newpark Bg: https://www.tripadvisor.ie/Hotel_Review-g186616-d212709-Reviews-Newpark_Hotel-Kilkenny_County_Kilkenny.html
+Kilkenny High St: https://kilkennyblock.ie/portfolio-item/high-st-kilkenny/
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color:rgba(152, 183, 189, 0.685);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+header  {
+	display: flex;
+  background-color: rgb(51, 51, 51);
+  height: 50px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index:1;
+}
+
+header h1 {
+  margin: 10px 20px; 
+  color: white;
+}
+
+header h1 .color {
+	color: #02b8dd;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  padding: 0px 16px;
+  text-decoration: none;
+  line-height: 50px;
+  margin: 0px;
+}
+
+nav ul li a:hover:not(.active) {background-color: #111;}
+
+nav ul li a.active {background-color: #4ca0af;}
+
+nav ul li a.active:hover {background-color: #3e818d;}
+
+a {
+  text-decoration: none;
+}
+
+header > input, header > label  {
+  display: none;
+}
+
+header > label {
+  color: #09c;
+  cursor: pointer;
+}
+
+.descriptor {
+  margin-left: 20%;
+  margin-right: 20%;
+  max-width: 60%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* https://www.w3schools.com/css/css3_shadows_box.asp */
+  background: rgba(255, 255, 255, 0.356);
+  margin-top: 5%;
+  margin-bottom: 5%;
+} 
+
+#kilkenny {
+  background-image: 
+  linear-gradient(0deg, rgba(0, 182, 206) 16%, rgba(255,255,255,0.42) 100%),
+  url("/images/kilkenny.jpg");
+  background-position: center;
+  width: 100%;
+  height: 600px;
+  position: relative;
+  display: flex;
+}
+
+#kilkenny2 {
+  background-image: 
+  linear-gradient(0deg, rgba(255,255,255,0.42) 30%, rgb(0, 182, 206) 100%),
+  url("/images/kilkenny2.jpeg");
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  position: relative;
+  display: flex;
+}
+
+#kilkennycontact {
+  background-image: 
+  linear-gradient(0deg, rgba(121, 235, 255, 0.733) 16%, rgba(255, 255, 255, 0.719) 100%),
+  url("/images/kilkenny.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 1100px;
+  position: relative;
+  display: flex;
+}
+
+.bannertext {
+  margin-top:25%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-size: 35px;
+  text-shadow: -1px -1px 0 rgb(99, 99, 99), 1px -1px 0 rgb(99, 99, 99), -1px 1px 0 rgb(99, 99, 99), 1px 1px 0 rgb(99, 99, 99);
+}
+
+.bannerpara {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-decoration: none;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#farm {
+  background-image: 
+  linear-gradient(0deg, rgba(255,255,255,0.42) 30%, rgb(0, 182, 206) 100%),
+  url("/images/farm.jpg");
+  background-position: center;
+  width: 100%;
+  height: 600px;
+  position: relative;
+  display: flex;
+}
+
+#cbskk {
+  background-image: 
+  linear-gradient(0deg, rgba(0, 182, 206) 16%, rgba(255,255,255,0.42) 100%),
+  url("/images/cbsbg.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  position: relative;
+  display: flex;
+}
+
+#cbskk > .right > .bannertext {
+  margin-top: 10%;
+}
+
+#ucd {
+  background-image: 
+  linear-gradient(0deg, rgb(0, 182, 206) 0%, rgba(255, 255, 255, 0.547) 50%,  rgb(0, 182, 206) 100%),
+  url("/images/ucdbg.jpg");
+  background-position: center;
+  width: 100%;
+  height: 600px;
+  position: relative;
+  display: flex;
+}
+
+#liberty {
+  background-image: 
+  linear-gradient(0deg, rgb(0, 225, 255) 0%, rgba(255, 255, 255, 0.547) 50%,  rgb(0, 182, 206) 100%),
+  url("/images/libertybg.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+}
+
+#newireland {
+  background-image: 
+  linear-gradient(0deg, rgb(0, 225, 255) 0%, rgba(255, 255, 255, 0.547) 50%,  rgb(0, 225, 255) 100%),
+  url("/images/newirelandbg.jpg");
+  background-repeat: round;
+  background-size:  100%;
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+
+#carrigan {
+  background-image: 
+  linear-gradient(0deg, rgb(0, 225, 255) 0%, rgba(255,255,255,0.67) 50%,  rgb(0, 225, 255) 100%),
+  url("/images/kilkenny.jpg");
+  background-repeat: round;
+  background-size:  100%;
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+
+#newpark {
+  background-image: 
+  linear-gradient(0deg, rgba(255, 255, 255, 0.678) 30%, rgb(0, 225, 255) 100%),
+  url("/images/newparkbg.jpg");
+  background-repeat: round;
+  background-size:  100%;
+  width: 100%;
+  height: 900px;
+  position: relative;
+}
+
+.bottom > img {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.left {
+  width: 100%;
+  float: left;
+}
+
+.right {
+  width: 100%;
+  float: left;
+}
+
+.gallery {
+  margin: 25px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* https://www.w3schools.com/css/css3_shadows_box.asp */
+  float: left;
+  width: 200px;
+  background-color: rgba(255, 255, 255, 0.425);
+}
+
+.gallery:hover {
+  border: 1px solid #777;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+#gallery {
+  background-image: 
+  linear-gradient(0deg, rgba(255,255,255,0.42) 30%, rgb(0, 182, 206) 100%),
+  url("/images/farm.jpg");
+  background-position: center;
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  
+}
+
+input[type=submit] {
+  background-color: #01dbeb;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a0a0;
+}
+
+.container {
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#newpark > ul {
+  margin-left: 30%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+@media only screen and (max-width: 600px) {
+  nav ul {
+    align-items: center;
+    flex-direction: column;
+  }
+  nav ul li {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(51, 51, 51);
+  }
+  nav ul li a {
+    text-align: center;
+    font-size: 24px;
+  }
+  nav {
+    margin-top: 35px;
+    flex-direction: column;
+  }
+
+  header > label {
+    background-color: #ffffff00; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 34px;
+    display: inline;
+    position: absolute;
+    right: 20px;
+  }
+
+  header > input:checked + nav ul{
+    display: none;
+  }
+
+  .left {
+    width: 100%;
+  }
+  .bannertext {
+    margin-top: 5%;
+  }
+  .right {
+    width: 100%;
+    height: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* https://www.w3schools.com/css/css3_shadows_box.asp */
+    background: rgba(255, 255, 255, 0.356);
+  }
+
+  #cbskk {
+    height: 700px
+  }
+
+  #cbskk > .right {
+    height: 400px;
+  }
+
+  .descriptor {
+    margin-left: 30%;
+    margin-right: 30%;
+    width: 40%;
+  }
+  
+  #kilkenny, #farm, #cbskk, #ucd, #kilkenny2{
+      display: block;
+  }
+
+  .bannerpara {
+    font-size: 17px;
+  }
+
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  #newpark > ul {
+    margin-left: 0%;
+  }
+}
+
+.main {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* table styling */
+table, th, td {
+    text-align: center;
+    border: 1px solid black;
+    margin-left: 30%;
+    margin-right: 30%;
+    width: 40%;
+    
+}
+
+tr {
+  background-color: white;
+}
+
+table {
+  background-color: black;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+  height: 4rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.galleryhead {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-size: 35px;
+  text-shadow: -1px -1px 0 rgb(99, 99, 99), 1px -1px 0 rgb(99, 99, 99), -1px 1px 0 rgb(99, 99, 99), 1px 1px 0 rgb(99, 99, 99);
+  margin-top: 2.5%;
+}
+
