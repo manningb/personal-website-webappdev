@@ -12,7 +12,7 @@
 - At least one local or embedded video: Embedded video on work page for cbs kilkenny
 
 - At least four CSS3 and four HTML5 specific elements: 
-CSS3: RGBA property used for image backgrounds, box-shadow property used for each of the images, text-shadow property used for <h2>s, 
+CSS3: RGBA property used for image backgrounds, box-shadow property used for each of the images, text-shadow property used for h2s, 
 linear-gradient used on background of pages 
 HTML5: Header tag used on every page for navbar along with nav tag, Footer tag used on every page, article tag used on home, work and 
 projects, section tag used on gallery page, figure and fig caption used for images on all pages
